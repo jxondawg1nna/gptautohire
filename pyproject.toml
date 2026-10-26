@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autohire-venture-lab"
+version = "0.1.0"
+description = "Local-first, safety-gated multi-agent experimentation framework"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+venture-lab = "venture_lab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["venture_lab*"]
